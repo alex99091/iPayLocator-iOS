@@ -16,4 +16,12 @@ class IconCell: UICollectionViewCell, ReuseIdentifiable {
         super.awakeFromNib()
     }
     
+    func configureImage(with imageName: String) {
+        iconImage.image = UIImage(systemName: imageName)
+    }
+    
+    func configureText(with text: String) {
+        iconLabel.text = text
+    }
+    
 }

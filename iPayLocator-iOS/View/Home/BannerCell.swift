@@ -15,4 +15,11 @@ class BannerCell: UICollectionViewCell, ReuseIdentifiable {
         super.awakeFromNib()
     }
     
+    func configureImage(with imagePath: String) {
+        if let image = UIImage(named: imagePath) {
+            bannerImage.image = image
+            bannerImage.contentMode = .scaleToFill
+        }
+    }
+    
 }

@@ -75,7 +75,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kln-Hr-WUJ">
-                                <rect key="frame" x="303.5" y="79.5" width="65.5" height="64"/>
+                                <rect key="frame" x="313.5" y="79.5" width="55.5" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.84313725490196079" green="0.87450980392156863" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -83,8 +83,8 @@
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LMp-r8-iCG">
-                                <rect key="frame" x="25" y="170.5" width="364" height="622.5"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.70196078431372544" blue="0.72156862745098038" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="170.5" width="414" height="632.5"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.70196078431372544" blue="0.72156862745098038" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7rH-7T-Vys">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -151,17 +151,17 @@
                         <constraints>
                             <constraint firstItem="99z-oc-aG7" firstAttribute="leading" secondItem="3gz-gy-eTU" secondAttribute="leading" constant="70" id="4yF-xE-W9e"/>
                             <constraint firstItem="99z-oc-aG7" firstAttribute="top" secondItem="zID-g9-sYp" secondAttribute="bottom" constant="20" id="BV6-x5-zkQ"/>
-                            <constraint firstItem="3gz-gy-eTU" firstAttribute="bottom" secondItem="LMp-r8-iCG" secondAttribute="bottom" constant="20" id="CGt-Ry-cW9"/>
+                            <constraint firstItem="3gz-gy-eTU" firstAttribute="bottom" secondItem="LMp-r8-iCG" secondAttribute="bottom" constant="10" id="CGt-Ry-cW9"/>
                             <constraint firstItem="zID-g9-sYp" firstAttribute="leading" secondItem="3gz-gy-eTU" secondAttribute="leading" constant="45" id="ICP-aK-xFb"/>
                             <constraint firstItem="3gz-gy-eTU" firstAttribute="trailing" secondItem="Kln-Hr-WUJ" secondAttribute="trailing" constant="45" id="IcC-3Q-Vo7"/>
                             <constraint firstItem="zID-g9-sYp" firstAttribute="top" secondItem="3gz-gy-eTU" secondAttribute="top" constant="30" id="PKB-rh-XgZ"/>
                             <constraint firstItem="LMp-r8-iCG" firstAttribute="top" secondItem="99z-oc-aG7" secondAttribute="bottom" constant="-15" id="XF3-ZX-jyj"/>
-                            <constraint firstItem="zID-g9-sYp" firstAttribute="bottom" secondItem="Kln-Hr-WUJ" secondAttribute="bottom" constant="-10" id="XtZ-rn-ifs"/>
-                            <constraint firstItem="LMp-r8-iCG" firstAttribute="leading" secondItem="3gz-gy-eTU" secondAttribute="leading" constant="25" id="dsZ-AM-C33"/>
+                            <constraint firstItem="zID-g9-sYp" firstAttribute="bottom" secondItem="Kln-Hr-WUJ" secondAttribute="bottom" id="XtZ-rn-ifs"/>
+                            <constraint firstItem="LMp-r8-iCG" firstAttribute="leading" secondItem="3gz-gy-eTU" secondAttribute="leading" id="dsZ-AM-C33"/>
                             <constraint firstItem="Kln-Hr-WUJ" firstAttribute="top" secondItem="zID-g9-sYp" secondAttribute="top" constant="5" id="fzf-KP-lwm"/>
                             <constraint firstItem="3gz-gy-eTU" firstAttribute="trailing" secondItem="99z-oc-aG7" secondAttribute="trailing" constant="70" id="kvD-yb-nCg"/>
                             <constraint firstItem="3gz-gy-eTU" firstAttribute="trailing" secondItem="zID-g9-sYp" secondAttribute="trailing" constant="120" id="m9f-DR-yW1"/>
-                            <constraint firstItem="3gz-gy-eTU" firstAttribute="trailing" secondItem="LMp-r8-iCG" secondAttribute="trailing" constant="25" id="s2X-me-pgj"/>
+                            <constraint firstItem="3gz-gy-eTU" firstAttribute="trailing" secondItem="LMp-r8-iCG" secondAttribute="trailing" id="s2X-me-pgj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="ijg-c4-JXr"/>

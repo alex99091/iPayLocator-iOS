@@ -27,6 +27,9 @@
 		263FF7A329B960C20053D7BE /* IconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263FF7A229B960C20053D7BE /* IconCell.xib */; };
 		263FF7A529B962F50053D7BE /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7A429B962F50053D7BE /* CardCell.swift */; };
 		263FF7A729B9631C0053D7BE /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263FF7A629B9631C0053D7BE /* CardCell.xib */; };
+		263FF7B029B967D00053D7BE /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7AF29B967D00053D7BE /* BannerData.swift */; };
+		263FF7B629B969BA0053D7BE /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7B529B969BA0053D7BE /* IconData.swift */; };
+		265C147929B97A4C00EEBD11 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147829B97A4C00EEBD11 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		263FF7A229B960C20053D7BE /* IconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCell.xib; sourceTree = "<group>"; };
 		263FF7A429B962F50053D7BE /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		263FF7A629B9631C0053D7BE /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		263FF7AF29B967D00053D7BE /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
+		263FF7B529B969BA0053D7BE /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
+		265C147829B97A4C00EEBD11 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				263FF79429B9515E0053D7BE /* UIColor.swift */,
 				263FF79C29B955F00053D7BE /* Nibbed.swift */,
 				263FF79D29B955F00053D7BE /* ReuseIdentifiable.swift */,
+				265C147829B97A4C00EEBD11 /* UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,10 +157,10 @@
 			children = (
 				263FF79829B954BF0053D7BE /* BannerCell.swift */,
 				263FF79A29B954C60053D7BE /* BannerCell.xib */,
-				263FF7A029B960A00053D7BE /* IconCell.swift */,
-				263FF7A229B960C20053D7BE /* IconCell.xib */,
 				263FF7A429B962F50053D7BE /* CardCell.swift */,
 				263FF7A629B9631C0053D7BE /* CardCell.xib */,
+				263FF7A029B960A00053D7BE /* IconCell.swift */,
+				263FF7A229B960C20053D7BE /* IconCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -161,6 +168,8 @@
 		263FF7A829B967440053D7BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				263FF7AF29B967D00053D7BE /* BannerData.swift */,
+				263FF7B529B969BA0053D7BE /* IconData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 				263FF77629B940E70053D7BE /* HomeViewController.swift in Sources */,
 				263FF79529B9515E0053D7BE /* UIColor.swift in Sources */,
 				263FF79E29B955F00053D7BE /* Nibbed.swift in Sources */,
+				263FF7B629B969BA0053D7BE /* IconData.swift in Sources */,
 				263FF79F29B955F00053D7BE /* ReuseIdentifiable.swift in Sources */,
 				263FF78929B9417D0053D7BE /* QRViewController.swift in Sources */,
 				263FF7A129B960A00053D7BE /* IconCell.swift in Sources */,
@@ -253,6 +263,8 @@
 				263FF77229B940E70053D7BE /* AppDelegate.swift in Sources */,
 				263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */,
 				263FF78729B941610053D7BE /* MapViewController.swift in Sources */,
+				263FF7B029B967D00053D7BE /* BannerData.swift in Sources */,
+				265C147929B97A4C00EEBD11 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
