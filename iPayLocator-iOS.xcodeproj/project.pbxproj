@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		263FF77229B940E70053D7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77129B940E70053D7BE /* AppDelegate.swift */; };
+		263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77329B940E70053D7BE /* SceneDelegate.swift */; };
+		263FF77629B940E70053D7BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77529B940E70053D7BE /* HomeViewController.swift */; };
+		263FF77929B940E70053D7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263FF77729B940E70053D7BE /* Main.storyboard */; };
+		263FF77B29B940E80053D7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263FF77A29B940E80053D7BE /* Assets.xcassets */; };
+		263FF77E29B940E80053D7BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263FF77C29B940E80053D7BE /* LaunchScreen.storyboard */; };
+		263FF78729B941610053D7BE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF78629B941610053D7BE /* MapViewController.swift */; };
+		263FF78929B9417D0053D7BE /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF78829B9417D0053D7BE /* QRViewController.swift */; };
+		263FF78D29B948F20053D7BE /* SingleDay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263FF78C29B948F20053D7BE /* SingleDay-Regular.ttf */; };
+		263FF79029B949BD0053D7BE /* Dongle-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263FF78E29B949BD0053D7BE /* Dongle-Light.ttf */; };
+		263FF79129B949BD0053D7BE /* Dongle-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 263FF78F29B949BD0053D7BE /* Dongle-Regular.ttf */; };
+		263FF79529B9515E0053D7BE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF79429B9515E0053D7BE /* UIColor.swift */; };
+		263FF79929B954BF0053D7BE /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF79829B954BF0053D7BE /* BannerCell.swift */; };
+		263FF79B29B954C60053D7BE /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263FF79A29B954C60053D7BE /* BannerCell.xib */; };
+		263FF79E29B955F00053D7BE /* Nibbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF79C29B955F00053D7BE /* Nibbed.swift */; };
+		263FF79F29B955F00053D7BE /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF79D29B955F00053D7BE /* ReuseIdentifiable.swift */; };
+		263FF7A129B960A00053D7BE /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7A029B960A00053D7BE /* IconCell.swift */; };
+		263FF7A329B960C20053D7BE /* IconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263FF7A229B960C20053D7BE /* IconCell.xib */; };
+		263FF7A529B962F50053D7BE /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7A429B962F50053D7BE /* CardCell.swift */; };
+		263FF7A729B9631C0053D7BE /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263FF7A629B9631C0053D7BE /* CardCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		263FF76E29B940E70053D7BE /* iPayLocator-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPayLocator-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		263FF77129B940E70053D7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		263FF77329B940E70053D7BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		263FF77529B940E70053D7BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		263FF77829B940E70053D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		263FF77A29B940E80053D7BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		263FF77D29B940E80053D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		263FF77F29B940E80053D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		263FF78629B941610053D7BE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		263FF78829B9417D0053D7BE /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		263FF78C29B948F20053D7BE /* SingleDay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SingleDay-Regular.ttf"; sourceTree = "<group>"; };
+		263FF78E29B949BD0053D7BE /* Dongle-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dongle-Light.ttf"; sourceTree = "<group>"; };
+		263FF78F29B949BD0053D7BE /* Dongle-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dongle-Regular.ttf"; sourceTree = "<group>"; };
+		263FF79429B9515E0053D7BE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		263FF79829B954BF0053D7BE /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		263FF79A29B954C60053D7BE /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		263FF79C29B955F00053D7BE /* Nibbed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nibbed.swift; sourceTree = "<group>"; };
+		263FF79D29B955F00053D7BE /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		263FF7A029B960A00053D7BE /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		263FF7A229B960C20053D7BE /* IconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCell.xib; sourceTree = "<group>"; };
+		263FF7A429B962F50053D7BE /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		263FF7A629B9631C0053D7BE /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		263FF76B29B940E70053D7BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		263FF76529B940E70053D7BE = {
+			isa = PBXGroup;
+			children = (
+				263FF77029B940E70053D7BE /* iPayLocator-iOS */,
+				263FF76F29B940E70053D7BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		263FF76F29B940E70053D7BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				263FF76E29B940E70053D7BE /* iPayLocator-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		263FF77029B940E70053D7BE /* iPayLocator-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				263FF79329B951560053D7BE /* Extension */,
+				263FF78B29B941A40053D7BE /* Supporting Files */,
+				263FF7A829B967440053D7BE /* Model */,
+				263FF78A29B941980053D7BE /* View */,
+				263FF78529B9414B0053D7BE /* Controller */,
+				263FF77F29B940E80053D7BE /* Info.plist */,
+			);
+			path = "iPayLocator-iOS";
+			sourceTree = "<group>";
+		};
+		263FF78529B9414B0053D7BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				263FF77129B940E70053D7BE /* AppDelegate.swift */,
+				263FF77329B940E70053D7BE /* SceneDelegate.swift */,
+				263FF77529B940E70053D7BE /* HomeViewController.swift */,
+				263FF78629B941610053D7BE /* MapViewController.swift */,
+				263FF78829B9417D0053D7BE /* QRViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		263FF78A29B941980053D7BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				263FF79729B954AD0053D7BE /* Home */,
+				263FF79629B954A80053D7BE /* Common */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		263FF78B29B941A40053D7BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				263FF78E29B949BD0053D7BE /* Dongle-Light.ttf */,
+				263FF78F29B949BD0053D7BE /* Dongle-Regular.ttf */,
+				263FF78C29B948F20053D7BE /* SingleDay-Regular.ttf */,
+				263FF77A29B940E80053D7BE /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		263FF79329B951560053D7BE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				263FF79429B9515E0053D7BE /* UIColor.swift */,
+				263FF79C29B955F00053D7BE /* Nibbed.swift */,
+				263FF79D29B955F00053D7BE /* ReuseIdentifiable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		263FF79629B954A80053D7BE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				263FF77729B940E70053D7BE /* Main.storyboard */,
+				263FF77C29B940E80053D7BE /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		263FF79729B954AD0053D7BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				263FF79829B954BF0053D7BE /* BannerCell.swift */,
+				263FF79A29B954C60053D7BE /* BannerCell.xib */,
+				263FF7A029B960A00053D7BE /* IconCell.swift */,
+				263FF7A229B960C20053D7BE /* IconCell.xib */,
+				263FF7A429B962F50053D7BE /* CardCell.swift */,
+				263FF7A629B9631C0053D7BE /* CardCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		263FF7A829B967440053D7BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		263FF76D29B940E70053D7BE /* iPayLocator-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 263FF78229B940E80053D7BE /* Build configuration list for PBXNativeTarget "iPayLocator-iOS" */;
+			buildPhases = (
+				263FF76A29B940E70053D7BE /* Sources */,
+				263FF76B29B940E70053D7BE /* Frameworks */,
+				263FF76C29B940E70053D7BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iPayLocator-iOS";
+			productName = "iPayLocator-iOS";
+			productReference = 263FF76E29B940E70053D7BE /* iPayLocator-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		263FF76629B940E70053D7BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					263FF76D29B940E70053D7BE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 263FF76929B940E70053D7BE /* Build configuration list for PBXProject "iPayLocator-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 263FF76529B940E70053D7BE;
+			productRefGroup = 263FF76F29B940E70053D7BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				263FF76D29B940E70053D7BE /* iPayLocator-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		263FF76C29B940E70053D7BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263FF79129B949BD0053D7BE /* Dongle-Regular.ttf in Resources */,
+				263FF78D29B948F20053D7BE /* SingleDay-Regular.ttf in Resources */,
+				263FF77E29B940E80053D7BE /* LaunchScreen.storyboard in Resources */,
+				263FF79B29B954C60053D7BE /* BannerCell.xib in Resources */,
+				263FF79029B949BD0053D7BE /* Dongle-Light.ttf in Resources */,
+				263FF77B29B940E80053D7BE /* Assets.xcassets in Resources */,
+				263FF7A329B960C20053D7BE /* IconCell.xib in Resources */,
+				263FF7A729B9631C0053D7BE /* CardCell.xib in Resources */,
+				263FF77929B940E70053D7BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		263FF76A29B940E70053D7BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263FF79929B954BF0053D7BE /* BannerCell.swift in Sources */,
+				263FF77629B940E70053D7BE /* HomeViewController.swift in Sources */,
+				263FF79529B9515E0053D7BE /* UIColor.swift in Sources */,
+				263FF79E29B955F00053D7BE /* Nibbed.swift in Sources */,
+				263FF79F29B955F00053D7BE /* ReuseIdentifiable.swift in Sources */,
+				263FF78929B9417D0053D7BE /* QRViewController.swift in Sources */,
+				263FF7A129B960A00053D7BE /* IconCell.swift in Sources */,
+				263FF7A529B962F50053D7BE /* CardCell.swift in Sources */,
+				263FF77229B940E70053D7BE /* AppDelegate.swift in Sources */,
+				263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */,
+				263FF78729B941610053D7BE /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		263FF77729B940E70053D7BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				263FF77829B940E70053D7BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		263FF77C29B940E80053D7BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				263FF77D29B940E80053D7BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		263FF78029B940E80053D7BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		263FF78129B940E80053D7BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		263FF78329B940E80053D7BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Y8JZ9AQG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iPayLocator-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bkk99091.iPayLocator-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		263FF78429B940E80053D7BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Y8JZ9AQG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iPayLocator-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bkk99091.iPayLocator-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		263FF76929B940E70053D7BE /* Build configuration list for PBXProject "iPayLocator-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263FF78029B940E80053D7BE /* Debug */,
+				263FF78129B940E80053D7BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		263FF78229B940E80053D7BE /* Build configuration list for PBXNativeTarget "iPayLocator-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263FF78329B940E80053D7BE /* Debug */,
+				263FF78429B940E80053D7BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 263FF76629B940E70053D7BE /* Project object */;
+}
