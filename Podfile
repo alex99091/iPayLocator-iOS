@@ -6,5 +6,5 @@ target 'iPayLocator-iOS' do
   use_frameworks!
 
   # Pods for iPayLocator-iOS
-
+  pod 'NMapsMap'
 end

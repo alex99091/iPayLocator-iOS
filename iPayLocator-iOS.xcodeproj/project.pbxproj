@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC8F61DEA478C11B880C6CD /* Pods_iPayLocator_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BD248B29E48F092D29DFA /* Pods_iPayLocator_iOS.framework */; };
 		263FF77229B940E70053D7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77129B940E70053D7BE /* AppDelegate.swift */; };
 		263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77329B940E70053D7BE /* SceneDelegate.swift */; };
 		263FF77629B940E70053D7BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF77529B940E70053D7BE /* HomeViewController.swift */; };
@@ -30,6 +31,9 @@
 		263FF7B029B967D00053D7BE /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7AF29B967D00053D7BE /* BannerData.swift */; };
 		263FF7B629B969BA0053D7BE /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FF7B529B969BA0053D7BE /* IconData.swift */; };
 		265C147929B97A4C00EEBD11 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147829B97A4C00EEBD11 /* UIImage.swift */; };
+		265C147B29B9AB9200EEBD11 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147A29B9AB9200EEBD11 /* Bundle.swift */; };
+		265C147E29B9BACE00EEBD11 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147D29B9BACE00EEBD11 /* MapCell.swift */; };
+		265C148029B9BB0900EEBD11 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265C147F29B9BB0900EEBD11 /* MapCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,12 @@
 		263FF7AF29B967D00053D7BE /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
 		263FF7B529B969BA0053D7BE /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
 		265C147829B97A4C00EEBD11 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		265C147A29B9AB9200EEBD11 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		265C147D29B9BACE00EEBD11 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		265C147F29B9BB0900EEBD11 /* MapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		7C5BD248B29E48F092D29DFA /* Pods_iPayLocator_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPayLocator_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B85BA2BD9472EB52DB8BA4 /* Pods-iPayLocator-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPayLocator-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD590704504F6520B0B13DE /* Pods-iPayLocator-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPayLocator-iOS.release.xcconfig"; path = "Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC8F61DEA478C11B880C6CD /* Pods_iPayLocator_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,8 @@
 			children = (
 				263FF77029B940E70053D7BE /* iPayLocator-iOS */,
 				263FF76F29B940E70053D7BE /* Products */,
+				6CD33078A321EDCD6F37AA01 /* Pods */,
+				945851F0B469855C96CA7FBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +128,7 @@
 		263FF78A29B941980053D7BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				265C147C29B9BAA700EEBD11 /* Map */,
 				263FF79729B954AD0053D7BE /* Home */,
 				263FF79629B954A80053D7BE /* Common */,
 			);
@@ -139,6 +153,7 @@
 				263FF79C29B955F00053D7BE /* Nibbed.swift */,
 				263FF79D29B955F00053D7BE /* ReuseIdentifiable.swift */,
 				265C147829B97A4C00EEBD11 /* UIImage.swift */,
+				265C147A29B9AB9200EEBD11 /* Bundle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -174,6 +189,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		265C147C29B9BAA700EEBD11 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				265C147D29B9BACE00EEBD11 /* MapCell.swift */,
+				265C147F29B9BB0900EEBD11 /* MapCell.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6CD33078A321EDCD6F37AA01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6B85BA2BD9472EB52DB8BA4 /* Pods-iPayLocator-iOS.debug.xcconfig */,
+				BDD590704504F6520B0B13DE /* Pods-iPayLocator-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		945851F0B469855C96CA7FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BD248B29E48F092D29DFA /* Pods_iPayLocator_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 263FF78229B940E80053D7BE /* Build configuration list for PBXNativeTarget "iPayLocator-iOS" */;
 			buildPhases = (
+				E1C8810039CB72237A7A154F /* [CP] Check Pods Manifest.lock */,
 				263FF76A29B940E70053D7BE /* Sources */,
 				263FF76B29B940E70053D7BE /* Frameworks */,
 				263FF76C29B940E70053D7BE /* Resources */,
+				C4690FAF3461062315EE93A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +279,7 @@
 				263FF78D29B948F20053D7BE /* SingleDay-Regular.ttf in Resources */,
 				263FF77E29B940E80053D7BE /* LaunchScreen.storyboard in Resources */,
 				263FF79B29B954C60053D7BE /* BannerCell.xib in Resources */,
+				265C148029B9BB0900EEBD11 /* MapCell.xib in Resources */,
 				263FF79029B949BD0053D7BE /* Dongle-Light.ttf in Resources */,
 				263FF77B29B940E80053D7BE /* Assets.xcassets in Resources */,
 				263FF7A329B960C20053D7BE /* IconCell.xib in Resources */,
@@ -245,6 +289,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4690FAF3461062315EE93A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C8810039CB72237A7A154F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPayLocator-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		263FF76A29B940E70053D7BE /* Sources */ = {
@@ -257,6 +343,7 @@
 				263FF79E29B955F00053D7BE /* Nibbed.swift in Sources */,
 				263FF7B629B969BA0053D7BE /* IconData.swift in Sources */,
 				263FF79F29B955F00053D7BE /* ReuseIdentifiable.swift in Sources */,
+				265C147E29B9BACE00EEBD11 /* MapCell.swift in Sources */,
 				263FF78929B9417D0053D7BE /* QRViewController.swift in Sources */,
 				263FF7A129B960A00053D7BE /* IconCell.swift in Sources */,
 				263FF7A529B962F50053D7BE /* CardCell.swift in Sources */,
@@ -264,6 +351,7 @@
 				263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */,
 				263FF78729B941610053D7BE /* MapViewController.swift in Sources */,
 				263FF7B029B967D00053D7BE /* BannerData.swift in Sources */,
+				265C147B29B9AB9200EEBD11 /* Bundle.swift in Sources */,
 				265C147929B97A4C00EEBD11 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +494,7 @@
 		};
 		263FF78329B940E80053D7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B85BA2BD9472EB52DB8BA4 /* Pods-iPayLocator-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,6 +523,7 @@
 		};
 		263FF78429B940E80053D7BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD590704504F6520B0B13DE /* Pods-iPayLocator-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
