@@ -10,7 +10,9 @@ import UIKit
 class MapCell: UICollectionViewCell, ReuseIdentifiable {
     
     // MARK: - IB Outlets
-    
+    @IBOutlet weak var marketTitle: UILabel!
+    @IBOutlet weak var distance: UILabel!
+    @IBOutlet weak var address: UILabel!
     
     // MARK: - Life Cycle
     override func awakeFromNib() {

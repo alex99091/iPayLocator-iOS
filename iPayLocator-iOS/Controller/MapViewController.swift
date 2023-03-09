@@ -23,7 +23,9 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtonStyle()
+        resultCollectionView.register(MapCell.uinib, forCellWithReuseIdentifier: MapCell.reuseIdentifier)
         resultCollectionView.dataSource = self
+        resultCollectionView.delegate = self
     }
     
     func configureButtonStyle() {
@@ -59,3 +61,6 @@ extension MapViewController: UICollectionViewDataSource {
     
 }
 
+extension MapViewController: UICollectionViewDelegate {
+    
+}

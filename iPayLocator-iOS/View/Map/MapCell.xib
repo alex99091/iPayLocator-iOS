@@ -34,8 +34,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거리 | 영동대로 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-sQ-97P">
-                        <rect key="frame" x="100" y="45" width="143" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거리 |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-sQ-97P">
+                        <rect key="frame" x="100" y="45" width="44" height="20"/>
+                        <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영동대로 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgk-4c-fEb">
+                        <rect key="frame" x="149" y="45" width="94" height="20"/>
                         <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -46,11 +52,18 @@
                     <constraint firstItem="4te-b6-Ahp" firstAttribute="top" secondItem="Cgb-yP-rgx" secondAttribute="top" id="C4U-pG-VeU"/>
                     <constraint firstItem="ZyJ-sQ-97P" firstAttribute="leading" secondItem="Cgb-yP-rgx" secondAttribute="trailing" constant="20" id="OVZ-JE-o0L"/>
                     <constraint firstItem="4te-b6-Ahp" firstAttribute="leading" secondItem="Cgb-yP-rgx" secondAttribute="trailing" constant="20" id="mlC-Tu-lkm"/>
+                    <constraint firstItem="Bgk-4c-fEb" firstAttribute="bottom" secondItem="ZyJ-sQ-97P" secondAttribute="bottom" id="n8Z-0T-pjY"/>
                     <constraint firstItem="Cgb-yP-rgx" firstAttribute="top" secondItem="HM0-xk-7Eb" secondAttribute="top" constant="5" id="oMh-BD-WrA"/>
                     <constraint firstItem="Cgb-yP-rgx" firstAttribute="leading" secondItem="HM0-xk-7Eb" secondAttribute="leading" constant="20" id="qh3-cl-qZh"/>
+                    <constraint firstItem="Bgk-4c-fEb" firstAttribute="leading" secondItem="ZyJ-sQ-97P" secondAttribute="trailing" constant="5" id="so9-H2-ion"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="357" height="73"/>
+            <connections>
+                <outlet property="address" destination="Bgk-4c-fEb" id="bCL-d7-RbI"/>
+                <outlet property="distance" destination="ZyJ-sQ-97P" id="CIn-kT-3cl"/>
+                <outlet property="marketTitle" destination="4te-b6-Ahp" id="sQ4-nb-NzQ"/>
+            </connections>
             <point key="canvasLocation" x="141.30434782608697" y="40.513392857142854"/>
         </collectionViewCell>
     </objects>
