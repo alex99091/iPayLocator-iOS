@@ -28,7 +28,7 @@
                         <viewLayoutGuide key="safeArea" id="GkV-No-Srd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="QR" image="qrcode.viewfinder" catalog="system" id="Ltw-QZ-7TS"/>
+                    <tabBarItem key="tabBarItem" title="QR" image="qrcode.viewfinder" catalog="system" selectedImage="qrcode.viewfinder" id="Ltw-QZ-7TS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abW-r6-P6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -31,6 +31,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         resultCollectionView.register(MapCell.uinib, forCellWithReuseIdentifier: MapCell.reuseIdentifier)
         resultCollectionView.dataSource = self
+        resultCollectionView.delegate = self
         resultCollectionView.collectionViewLayout = configureLayout()
         locationManger.delegate = self
         locationManger.desiredAccuracy = kCLLocationAccuracyBest
@@ -114,9 +115,9 @@ class MapViewController: UIViewController {
                 switch result {
                 case .success(let searchData):
                     guard let items = searchData.items else { return }
-                    var temp = ["type":"","title":"","address":"", "distance":"", "x": "", "y": ""]
                     self.cellDataList = [[String:String]]()
                     for item in items {
+                        var temp = ["type":"","title":"","address":"", "distance":"", "x": "", "y": ""]
                         if let itemTitle = item.title {
                             if itemTitle.contains("CU") {
                                 temp.updateValue("cu", forKey: "type")
@@ -145,7 +146,10 @@ class MapViewController: UIViewController {
                         }
                         self.cellDataList.append(temp)
                     }
-                    self.cellDataList = self.cellDataList.sorted { $0["distance"]! < $1["distance"]! }
+                    self.cellDataList.sort { Int($0["distance"]!)! < Int($1["distance"]!)! }
+                    print("----------------")
+                    print(self.cellDataList)
+                    print("----------------")
                     self.resultCollectionView.reloadData()
                 case .failure(let error):
                     print("failure: \(error)")
@@ -222,8 +226,6 @@ class MapViewController: UIViewController {
         createMarkers()
         reloadInputViews()
     }
-    
-    
 }
 
 extension MapViewController: UICollectionViewDataSource {
@@ -283,4 +285,21 @@ extension MapViewController: CLLocationManagerDelegate {
         print(error)
     }
     
+}
+
+extension MapViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let x = cellDataList[indexPath.item]["x"],
+           let y = cellDataList[indexPath.item]["y"] {
+            if let DoubleX = Double(x),
+               let DoubleY = Double(y) {
+                let convertKATECH = NMGTm128.init(x: DoubleX, y: DoubleY)
+                let convertedLatLng = convertKATECH.toLatLng()
+                let updatePosition = NMGLatLng(lat: convertedLatLng.lat, lng: convertedLatLng.lng)
+                let cameraUpdate = NMFCameraUpdate(scrollTo: updatePosition, zoomTo: 14)
+                naverMapView.moveCamera(cameraUpdate)
+                createMarkers()
+            }
+        }
+    }
 }
