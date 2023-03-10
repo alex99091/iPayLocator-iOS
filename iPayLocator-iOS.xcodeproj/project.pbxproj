@@ -34,6 +34,9 @@
 		265C147B29B9AB9200EEBD11 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147A29B9AB9200EEBD11 /* Bundle.swift */; };
 		265C147E29B9BACE00EEBD11 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C147D29B9BACE00EEBD11 /* MapCell.swift */; };
 		265C148029B9BB0900EEBD11 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265C147F29B9BB0900EEBD11 /* MapCell.xib */; };
+		265C148529BAE44E00EEBD11 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C148429BAE44E00EEBD11 /* SearchData.swift */; };
+		265C148729BAE49000EEBD11 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C148629BAE49000EEBD11 /* SearchAPI.swift */; };
+		265C148929BB068A00EEBD11 /* GeocodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C148829BB068A00EEBD11 /* GeocodeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		265C147A29B9AB9200EEBD11 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		265C147D29B9BACE00EEBD11 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
 		265C147F29B9BB0900EEBD11 /* MapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		265C148429BAE44E00EEBD11 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		265C148629BAE49000EEBD11 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		265C148829BB068A00EEBD11 /* GeocodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeData.swift; sourceTree = "<group>"; };
 		7C5BD248B29E48F092D29DFA /* Pods_iPayLocator_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPayLocator_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B85BA2BD9472EB52DB8BA4 /* Pods-iPayLocator-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPayLocator-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD590704504F6520B0B13DE /* Pods-iPayLocator-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPayLocator-iOS.release.xcconfig"; path = "Target Support Files/Pods-iPayLocator-iOS/Pods-iPayLocator-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		263FF77029B940E70053D7BE /* iPayLocator-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				265C148229BAE17F00EEBD11 /* API */,
 				263FF79329B951560053D7BE /* Extension */,
 				263FF78B29B941A40053D7BE /* Supporting Files */,
 				263FF7A829B967440053D7BE /* Model */,
@@ -185,6 +192,8 @@
 			children = (
 				263FF7AF29B967D00053D7BE /* BannerData.swift */,
 				263FF7B529B969BA0053D7BE /* IconData.swift */,
+				265C148429BAE44E00EEBD11 /* SearchData.swift */,
+				265C148829BB068A00EEBD11 /* GeocodeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +205,14 @@
 				265C147F29B9BB0900EEBD11 /* MapCell.xib */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		265C148229BAE17F00EEBD11 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				265C148629BAE49000EEBD11 /* SearchAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		6CD33078A321EDCD6F37AA01 /* Pods */ = {
@@ -233,6 +250,8 @@
 			dependencies = (
 			);
 			name = "iPayLocator-iOS";
+			packageProductDependencies = (
+			);
 			productName = "iPayLocator-iOS";
 			productReference = 263FF76E29B940E70053D7BE /* iPayLocator-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +280,8 @@
 				Base,
 			);
 			mainGroup = 263FF76529B940E70053D7BE;
+			packageReferences = (
+			);
 			productRefGroup = 263FF76F29B940E70053D7BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,10 +365,13 @@
 				263FF7B629B969BA0053D7BE /* IconData.swift in Sources */,
 				263FF79F29B955F00053D7BE /* ReuseIdentifiable.swift in Sources */,
 				265C147E29B9BACE00EEBD11 /* MapCell.swift in Sources */,
+				265C148529BAE44E00EEBD11 /* SearchData.swift in Sources */,
+				265C148729BAE49000EEBD11 /* SearchAPI.swift in Sources */,
 				263FF78929B9417D0053D7BE /* QRViewController.swift in Sources */,
 				263FF7A129B960A00053D7BE /* IconCell.swift in Sources */,
 				263FF7A529B962F50053D7BE /* CardCell.swift in Sources */,
 				263FF77229B940E70053D7BE /* AppDelegate.swift in Sources */,
+				265C148929BB068A00EEBD11 /* GeocodeData.swift in Sources */,
 				263FF77429B940E70053D7BE /* SceneDelegate.swift in Sources */,
 				263FF78729B941610053D7BE /* MapViewController.swift in Sources */,
 				263FF7B029B967D00053D7BE /* BannerData.swift in Sources */,

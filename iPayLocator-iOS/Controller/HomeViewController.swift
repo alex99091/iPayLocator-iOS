@@ -44,13 +44,13 @@ class HomeViewController: UIViewController {
     
     // MARK: - Method
     func configureStyle() {
-        chargeButton.titleLabel?.font = UIFont(name: customFont, size: 16)
+        chargeButton.titleLabel?.font = UIFont(name: customFont, size: 15)
         chargeButton.layer.cornerRadius = 12.5
         chargeButton.layer.borderWidth = 5
         chargeButton.layer.borderColor = UIColor(hex: hexColor).cgColor
         chargeButton.backgroundColor = UIColor(hex: hexColorBG)
         
-        giftButton.titleLabel?.font = UIFont(name: customFont, size: 16)
+        giftButton.titleLabel?.font = UIFont(name: customFont, size: 15)
         giftButton.layer.cornerRadius = 12.5
         giftButton.layer.borderWidth = 5
         giftButton.layer.borderColor = UIColor(hex: hexColor).cgColor
@@ -76,12 +76,12 @@ class HomeViewController: UIViewController {
             if sectionIndex == 0 {
                 // 배너셀
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                      heightDimension: .fractionalWidth(0.65))
+                                                      heightDimension: .fractionalWidth(0.75))
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                item.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 30, bottom: 0, trailing: 30)
+                item.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20)
                 
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                       heightDimension: .fractionalWidth(0.65))
+                                                       heightDimension: .fractionalWidth(0.75))
                 let groupSpacing = NSCollectionLayoutSpacing.fixed(0)
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                                subitems: [item])
@@ -135,7 +135,7 @@ class HomeViewController: UIViewController {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
             guard let self = self else { return }
             let numberOfItems = self.homeCollectionView.numberOfItems(inSection: 0)
             if numberOfItems > 0 {

@@ -21,50 +21,57 @@
                 <rect key="frame" x="0.0" y="0.0" width="357" height="73"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-yP-rgx">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cu" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-yP-rgx">
                         <rect key="frame" x="20" y="5" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="8qt-p6-KXe"/>
                             <constraint firstAttribute="width" constant="60" id="LH4-Xc-eHC"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="편의점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4te-b6-Ahp">
-                        <rect key="frame" x="100" y="5" width="65.5" height="27"/>
-                        <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="27"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거리 |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-sQ-97P">
-                        <rect key="frame" x="100" y="45" width="44" height="20"/>
-                        <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영동대로 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgk-4c-fEb">
-                        <rect key="frame" x="149" y="45" width="94" height="20"/>
-                        <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-p1-f2x">
+                        <rect key="frame" x="100" y="5" width="227" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="편의점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4te-b6-Ahp">
+                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="20"/>
+                                <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="거리 : 100M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-sQ-97P">
+                                <rect key="frame" x="0.0" y="20" width="51.5" height="20"/>
+                                <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="12"/>
+                                <color key="textColor" red="0.70107886900000005" green="0.64764600910000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영동대로 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgk-4c-fEb">
+                                <rect key="frame" x="0.0" y="40" width="56.5" height="20"/>
+                                <fontDescription key="fontDescription" name="SingleDay-Regular" family="Single Day" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ZyJ-sQ-97P" firstAttribute="bottom" secondItem="Cgb-yP-rgx" secondAttribute="bottom" id="13U-YK-kcu"/>
-                    <constraint firstItem="4te-b6-Ahp" firstAttribute="top" secondItem="Cgb-yP-rgx" secondAttribute="top" id="C4U-pG-VeU"/>
-                    <constraint firstItem="ZyJ-sQ-97P" firstAttribute="leading" secondItem="Cgb-yP-rgx" secondAttribute="trailing" constant="20" id="OVZ-JE-o0L"/>
-                    <constraint firstItem="4te-b6-Ahp" firstAttribute="leading" secondItem="Cgb-yP-rgx" secondAttribute="trailing" constant="20" id="mlC-Tu-lkm"/>
-                    <constraint firstItem="Bgk-4c-fEb" firstAttribute="bottom" secondItem="ZyJ-sQ-97P" secondAttribute="bottom" id="n8Z-0T-pjY"/>
+                    <constraint firstAttribute="trailing" secondItem="Pgb-p1-f2x" secondAttribute="trailing" constant="30" id="1Mr-Ff-Yxb"/>
+                    <constraint firstItem="Pgb-p1-f2x" firstAttribute="top" secondItem="Cgb-yP-rgx" secondAttribute="top" id="1fP-3g-Qyc"/>
+                    <constraint firstItem="Pgb-p1-f2x" firstAttribute="leading" secondItem="Cgb-yP-rgx" secondAttribute="trailing" constant="20" id="cMe-Vb-gbH"/>
                     <constraint firstItem="Cgb-yP-rgx" firstAttribute="top" secondItem="HM0-xk-7Eb" secondAttribute="top" constant="5" id="oMh-BD-WrA"/>
                     <constraint firstItem="Cgb-yP-rgx" firstAttribute="leading" secondItem="HM0-xk-7Eb" secondAttribute="leading" constant="20" id="qh3-cl-qZh"/>
-                    <constraint firstItem="Bgk-4c-fEb" firstAttribute="leading" secondItem="ZyJ-sQ-97P" secondAttribute="trailing" constant="5" id="so9-H2-ion"/>
+                    <constraint firstItem="Pgb-p1-f2x" firstAttribute="bottom" secondItem="Cgb-yP-rgx" secondAttribute="bottom" id="vc3-ZF-YyV"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="357" height="73"/>
             <connections>
                 <outlet property="address" destination="Bgk-4c-fEb" id="bCL-d7-RbI"/>
                 <outlet property="distance" destination="ZyJ-sQ-97P" id="CIn-kT-3cl"/>
+                <outlet property="marketImage" destination="Cgb-yP-rgx" id="eOY-Ij-1y7"/>
                 <outlet property="marketTitle" destination="4te-b6-Ahp" id="sQ4-nb-NzQ"/>
             </connections>
             <point key="canvasLocation" x="141.30434782608697" y="40.513392857142854"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="cu" width="200" height="202"/>
+    </resources>
 </document>

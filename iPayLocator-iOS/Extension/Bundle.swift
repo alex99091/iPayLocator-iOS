@@ -17,4 +17,28 @@ extension Bundle {
         return key
     }
     
+    var NMFClientSecret: String? {
+        guard let file = self.path(forResource: "Info", ofType: "plist"),
+              let resource = NSDictionary(contentsOfFile: file),
+              let key = resource["NMFClientSecret"] as? String else { return nil }
+        
+        return key
+    }
+    
+    var SearchClientId: String? {
+        guard let file = self.path(forResource: "Info", ofType: "plist"),
+              let resource = NSDictionary(contentsOfFile: file),
+              let key = resource["SearchClientId"] as? String else { return nil }
+        
+        return key
+    }
+    
+    var SearchClientSecret: String? {
+        guard let file = self.path(forResource: "Info", ofType: "plist"),
+              let resource = NSDictionary(contentsOfFile: file),
+              let key = resource["SearchClientSecret"] as? String else { return nil }
+        
+        return key
+    }
+    
 }

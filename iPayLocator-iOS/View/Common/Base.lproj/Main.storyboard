@@ -58,16 +58,25 @@
                                         <rect key="frame" x="138" y="0.0" width="66.5" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="cuButtonTapped:" destination="QLd-ie-MxO" eventType="touchUpInside" id="l1r-9l-9Wx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emn-Px-8m0">
                                         <rect key="frame" x="212.5" y="0.0" width="67" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="gsButtonTapped:" destination="QLd-ie-MxO" eventType="touchUpInside" id="NHH-9P-hJ3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOg-nQ-raQ">
                                         <rect key="frame" x="287.5" y="0.0" width="66.5" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="seButtonTapped:" destination="QLd-ie-MxO" eventType="touchUpInside" id="nVR-hA-YNw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -79,10 +88,10 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxG-7g-1p0">
-                                <rect key="frame" x="0.0" y="673" width="414" height="140"/>
+                                <rect key="frame" x="0.0" y="633" width="414" height="180"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="9TE-KT-kqs"/>
+                                    <constraint firstAttribute="height" constant="180" id="9TE-KT-kqs"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xZS-PC-WbA">
                                     <size key="itemSize" width="128" height="128"/>
@@ -91,7 +100,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gDO-sf-7Pr">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gDO-sf-7Pr">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="u2o-F6-5qi">
@@ -101,21 +110,30 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7r-F3-O6r" userLabel="forMapView">
+                                <rect key="frame" x="0.0" y="114" width="414" height="519"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IdC-rv-l8f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lxG-7g-1p0" firstAttribute="top" secondItem="s7r-F3-O6r" secondAttribute="bottom" id="4h2-GS-KNr"/>
+                            <constraint firstItem="s7r-F3-O6r" firstAttribute="top" secondItem="V6L-cf-jJh" secondAttribute="bottom" constant="20" id="B4u-Gk-2rw"/>
                             <constraint firstItem="lxG-7g-1p0" firstAttribute="leading" secondItem="IdC-rv-l8f" secondAttribute="leading" id="GUm-EA-ZfR"/>
                             <constraint firstItem="V6L-cf-jJh" firstAttribute="top" secondItem="IdC-rv-l8f" secondAttribute="top" constant="10" id="JQL-c5-mEq"/>
                             <constraint firstItem="IdC-rv-l8f" firstAttribute="trailing" secondItem="lxG-7g-1p0" secondAttribute="trailing" id="N2F-yQ-BBE"/>
                             <constraint firstItem="IdC-rv-l8f" firstAttribute="trailing" secondItem="V6L-cf-jJh" secondAttribute="trailing" constant="30" id="Xrg-sI-yjr"/>
                             <constraint firstItem="IdC-rv-l8f" firstAttribute="bottom" secondItem="lxG-7g-1p0" secondAttribute="bottom" id="e27-ud-kXd"/>
+                            <constraint firstItem="IdC-rv-l8f" firstAttribute="trailing" secondItem="s7r-F3-O6r" secondAttribute="trailing" id="eEE-rm-IIA"/>
+                            <constraint firstItem="s7r-F3-O6r" firstAttribute="leading" secondItem="IdC-rv-l8f" secondAttribute="leading" id="lYD-iK-MPU"/>
                             <constraint firstItem="V6L-cf-jJh" firstAttribute="leading" secondItem="IdC-rv-l8f" secondAttribute="leading" constant="30" id="mS2-a2-lCy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map.fill" id="RAm-Ev-jAA"/>
                     <connections>
                         <outlet property="resultCollectionView" destination="lxG-7g-1p0" id="0NX-3h-NUE"/>
+                        <outlet property="subUIView" destination="s7r-F3-O6r" id="Iky-gQ-Sec"/>
                         <outletCollection property="buttonCollection" destination="Bjp-Uq-1OH" collectionClass="NSMutableArray" id="4f7-Mm-3XH"/>
                         <outletCollection property="buttonCollection" destination="Emn-Px-8m0" collectionClass="NSMutableArray" id="XuX-X1-GQl"/>
                         <outletCollection property="buttonCollection" destination="rOg-nQ-raQ" collectionClass="NSMutableArray" id="39K-Gv-Vlc"/>
