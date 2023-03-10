@@ -41,7 +41,7 @@ extension SearchAPI {
         let customAllowedSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._~")
         guard let encodedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: customAllowedSet) else { return }
         
-        let queryString = encodedKeyword + "&display=3&start=1&sort=random"
+        let queryString = encodedKeyword + "&display=10&start=1&sort=random"
         let urlString = baseSearchURL + "?query=" + queryString
         
         print(urlString)

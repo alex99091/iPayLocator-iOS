@@ -21,6 +21,7 @@ class MapViewController: UIViewController {
     let buttonLogos: [String] = ["logo1", "logo2", "logo3"]
     var locationManger = CLLocationManager()
     var naverMapView = NMFMapView()
+    var markers = [NMFMarker]()
     var cellDataList = [[String:String]]()
     var currentCoordinate: [String:Double] = ["lat":0.0, "lng":0.0]
     var currentName = ""
@@ -113,7 +114,7 @@ class MapViewController: UIViewController {
                 switch result {
                 case .success(let searchData):
                     guard let items = searchData.items else { return }
-                    var temp = ["type":"","title":"","address":"", "distance":""]
+                    var temp = ["type":"","title":"","address":"", "distance":"", "x": "", "y": ""]
                     self.cellDataList = [[String:String]]()
                     for item in items {
                         if let itemTitle = item.title {
@@ -136,21 +137,15 @@ class MapViewController: UIViewController {
                             
                             let dataPoint = NMGPoint.init(x: convertedLatLng.lat, y: convertedLatLng.lng)
                             let currentPoint = NMGPoint.init(x: self.currentCoordinate["lat"]!, y: self.currentCoordinate["lng"]!)
-                            let distance = dataPoint.distance(to: currentPoint) * 10000
+                            let distance = dataPoint.distance(to: currentPoint) * 100000
                             
                             temp.updateValue(String(Int(distance)), forKey: "distance")
-                            
-                            let marker = NMFMarker.init(position: convertedLatLng)
-                            let config = UIImage.SymbolConfiguration(pointSize: 30)
-                            if let image = UIImage(systemName: "arrow.down.heart.fill", withConfiguration: config) {
-                                image.withTintColor(.red)
-                                let NMFImage = NMFOverlayImage.init(image: image)
-                                marker.iconImage = NMFImage
-                            }
+                            temp.updateValue(String(x), forKey: "x")
+                            temp.updateValue(String(y), forKey: "y")
                         }
                         self.cellDataList.append(temp)
-                        self.cellDataList.sort{ $0["distance"]! < $1["distance"]!}
                     }
+                    self.cellDataList = self.cellDataList.sorted { $0["distance"]! < $1["distance"]! }
                     self.resultCollectionView.reloadData()
                 case .failure(let error):
                     print("failure: \(error)")
@@ -176,15 +171,56 @@ class MapViewController: UIViewController {
         })
     }
     
+    func createMarkers() {
+        for data in cellDataList {
+            if let x = Double(data["x"]!),
+               let y = Double(data["y"]!) {
+                let convertKATECH = NMGTm128.init(x: x, y: y)
+                let convertedLatLng = convertKATECH.toLatLng()
+                
+                let marker = NMFMarker.init(position: convertedLatLng)
+                if let image = UIImage(named: "marker") {
+                    let size = CGSize(width: 24, height: 24)
+                    UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+                    image.draw(in: CGRect(origin: .zero, size: size))
+                    let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+                    UIGraphicsEndImageContext()
+                    let NMFImage = NMFOverlayImage(image: resizedImage!)
+                    marker.iconImage = NMFImage
+                }
+                markers.append(marker)
+            }
+        }
+        for marker in markers {
+            marker.mapView = naverMapView
+        }
+    }
+    
+    func removeAllMarkers() {
+        for marker in markers {
+            marker.mapView = nil
+        }
+        markers = []
+    }
+    
     // MARK: - IB Actions
     @IBAction func cuButtonTapped(_ sender: Any) {
         configureLocationWithButton("\(currentName) 씨유")
+        removeAllMarkers()
+        createMarkers()
+        reloadInputViews()
     }
     @IBAction func gsButtonTapped(_ sender: Any) {
         configureLocationWithButton("\(currentName) GS25")
+        removeAllMarkers()
+        createMarkers()
+        reloadInputViews()
     }
     @IBAction func seButtonTapped(_ sender: Any) {
         configureLocationWithButton("\(currentName) 세븐일레븐")
+        removeAllMarkers()
+        createMarkers()
+        reloadInputViews()
     }
     
     
